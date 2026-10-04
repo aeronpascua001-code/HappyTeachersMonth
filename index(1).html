@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Message — Ma'am Mae</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin:0; min-height:100vh; background:white; color:#333; font-family:Georgia,"Times New Roman",serif; overflow-x:hidden; }
+    .petal { position:fixed; top:-30px; width:12px; height:20px; background:#f3b6c8; border-radius:100% 0 100% 0; opacity:.6; animation:fall linear infinite; z-index:0; }
+    .petal:nth-child(1){left:8%;animation-duration:11s;animation-delay:-3s}.petal:nth-child(2){left:25%;animation-duration:14s;animation-delay:-7s}.petal:nth-child(3){left:70%;animation-duration:12s;animation-delay:-5s}.petal:nth-child(4){left:90%;animation-duration:15s;animation-delay:-9s}
+    @keyframes fall { 0%{transform:translateY(0) rotate(0)} 100%{transform:translate(70px,110vh) rotate(300deg)} }
+    .page { position:relative; z-index:1; width:min(900px,92%); margin:auto; padding:65px 0 80px; }
+    .flowers { text-align:center; font-size:42px; letter-spacing:10px; margin-bottom:20px; animation:appear 1.5s ease; }
+    .card { background:rgba(255,255,255,.97); border:1px solid #efd8df; border-radius:24px; padding:55px clamp(25px,7vw,75px); box-shadow:0 15px 45px rgba(120,80,95,.1); animation:rise 1.2s ease; }
+    h1 { margin:0 0 35px; text-align:center; font-size:clamp(30px,5vw,46px); font-weight:normal; color:#9d526d; }
+    h1::after { content:""; display:block; width:65px; height:2px; margin:15px auto 0; background:#e5a9bb; }
+    .letter { font-size:18px; line-height:1.85; }.salutation{font-size:21px;margin-bottom:25px}.letter p{margin:0 0 22px}.closing{text-align:right;margin-top:35px}.signature{font-family:"Brush Script MT","Segoe Script",cursive;font-size:27px;color:#9d526d}.footer{text-align:center;margin-top:30px;font-size:28px;opacity:.8}
+    @keyframes rise { from{opacity:0;transform:translateY(25px)} to{opacity:1;transform:translateY(0)} } @keyframes appear { from{opacity:0;transform:scale(.8)} to{opacity:1;transform:scale(1)} }
+    @media(max-width:600px){.page{padding-top:35px}.card{padding:38px 23px}.letter{font-size:16px;line-height:1.75}.salutation{font-size:19px}}
+  </style>
+</head>
+<body>
+  <div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div>
+  <main class="page">
+    <div class="flowers">🌷 🌸 🌷</div>
+    <section class="card">
+      <h1>A Little Message</h1>
+      <div class="letter">
+        <div class="salutation">Dear Ma'am Mae,</div>
+        <p>I just wanted to take a moment to say thank you.</p>
+        <p>You're honestly one of those teachers who makes it easy to feel comfortable in class. You're kind, approachable, and supportive, and somehow you manage to make teaching feel less like a strict teacher-student relationship and more like you're just another person in the room who happens to know what she's doing.</p>
+        <p>Sometimes, you act more like a student or a friend than a teacher, and I think that's one of the things that makes you memorable. You can joke around with us, understand our random moments, and still know when to guide us and remind us when we're supposed to get serious.</p>
+        <p>I really appreciate how you support your students, even in the little things. You make the classroom feel like a place where we can actually be ourselves without being afraid of making mistakes.</p>
+        <p>I don't think teachers always get to hear how much those little things mean to their students, so I wanted to say it while I had the chance.</p>
+        <p>Thank you for being patient with us, for supporting us, and for being someone we can genuinely approach.</p>
+        <p>Please keep being the kind of teacher you are.</p>
+        <p>Thank you, Ma'am. ✨</p>
+        <div class="closing"><div class="signature">— From Aeron Pascua</div></div>
+      </div>
+    </section>
+    <div class="footer">🌸 &nbsp; 🌿 &nbsp; 🌸</div>
+  </main>
+</body>
+</html>
